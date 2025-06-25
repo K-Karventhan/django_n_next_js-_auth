@@ -1,0 +1,16 @@
+<html lang="en">
+  <head>
+    <meta name="google-signin-scope" content="profile email">
+  </head>
+  <body>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <div id="g_id_onload" data-client_id="472488423457-h7g0dlcfaa4s9b598mvs5qhaufipdn9a.apps.googleusercontent.com"
+      data-callback="handleCredentialResponse"></div>
+    <div class="g_id_signin" data-type="standard" data-login_uri="http://localhost:3000"></div>
+    <script>
+      function handleCredentialResponse(googleUser) {
+        console.log("credentials",googleUser)
+      }
+    </script>
+  </body>
+</html>
